@@ -1,12 +1,11 @@
 :host{
-    min-width: 200px;
+    min-width: 300px;
     display: inline-block;
 }
 .h {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
+    align-items: center; 
     max-width:100%;
     transition: width .5s ease-in-out;
         gap: 10px;

@@ -7,14 +7,14 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class NgxI24ProgressBarComponent implements OnInit {
   @Input() text = 'HTML';
-  @Input() textColor = '#fff';
+  @Input() textColor = '#222';
 
   @Input() percentage = 75;
   @Input() percentageRadius = '3px';
   @Input() percentageHeight = '8px';
-  @Input() percentageColor = '#fff';
+  @Input() percentageColor = '#222';
 
-  @Input() progressBackColor = '#fff';
+  @Input() progressBackColor = '#eee';
   @Input() progressColor = '#e91e63';
 
 
