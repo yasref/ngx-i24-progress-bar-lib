@@ -1,1 +1,15 @@
-ngx-i24-progress-bar
+<div class="p-b-container">
+  <div class="h"
+       [ngStyle]="{'width': percentage+'%','margin-bottom':spaceBetween}">
+    <span class="title"
+          [ngStyle]="{'color': textColor}">{{text}}</span>
+    <data class="data"
+          [ngStyle]="{'color': percentageColor}"
+          [value]="percentage">{{percentage}}%</data>
+  </div>
+  <div class="progress-box"
+       [ngStyle]="{'background-color': progressBackColor,'height':percentageHeight,'border-radius':percentageRadius}">
+    <div class="progress"
+         [ngStyle]="{'width': percentage+'%','background-color':progressColor}"></div>
+  </div>
+</div>
