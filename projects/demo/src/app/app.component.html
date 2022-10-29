@@ -1,3 +1,31 @@
-<div>
-  <ngx-i24-progress-bar></ngx-i24-progress-bar>
+<div class="container">
+  <div>
+    <input type="number"
+           [(ngModel)]="htmlPercentage">
+    <ngx-i24-progress-bar [percentage]="htmlPercentage"
+                          [progressColor]="'#4caf50'"
+                          [textColor]="color"
+                          [percentageColor]="color"
+                          [progressBackColor]="progressBackColor"></ngx-i24-progress-bar>
+  </div>
+  <div>
+    <input type="number"
+           [(ngModel)]="cssPercentage">
+    <ngx-i24-progress-bar [percentage]="cssPercentage"
+                          [text]="'CSS'"
+                          [textColor]="color"
+                          [percentageColor]="color"
+                          [progressBackColor]="progressBackColor"
+                          [progressColor]="'#e91e63'"></ngx-i24-progress-bar>
+  </div>
+  <div>
+    <input type="number"
+           [(ngModel)]="jsPercentage">
+    <ngx-i24-progress-bar [percentage]="jsPercentage"
+                          [text]="'JS'"
+                          [textColor]="color"
+                          [percentageColor]="color"
+                          [progressBackColor]="progressBackColor"
+                          [progressColor]="'#03a9f4'"></ngx-i24-progress-bar>
+  </div>
 </div>

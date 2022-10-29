@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'demo';
+  htmlPercentage = 75;
+  cssPercentage = 83;
+  jsPercentage = 34;
+  color = '#ddd';
+  progressBackColor = '#333'
 }
