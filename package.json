@@ -1,6 +1,17 @@
 {
   "name": "ngx-i24-progress-bar-lib",
   "version": "0.0.0",
+  "description": "A lightweight plugin to render a simple, animated progress bar.",
+  "author": {
+    "name": "YASEEN ALREFAEE",
+    "url": "https://icode24.com/",
+    "email": "yaseen@icode24.com"
+  },
+  "homepage": "https://github.com/yasref/ngx-i24-progress-bar-lib/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yasref/ngx-i24-progress-bar-lib/"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -35,5 +46,16 @@
     "karma-jasmine-html-reporter": "~1.7.0",
     "ng-packagr": "^14.0.0",
     "typescript": "~4.7.2"
-  }
+  },
+  "license": "MIT",
+  "keywords": [
+    "color",
+    "progress",
+    "progress bar",
+    "angular",
+    "ng",
+    "ngx",
+    "i24",
+    "icode24"
+  ]
 }
