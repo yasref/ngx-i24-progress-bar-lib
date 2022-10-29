@@ -1,27 +1,77 @@
 # NgxI24ProgressBarLib
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.2.
+ A lightweight plugin to render a simple, animated progress bar.
+ 
+## Features
 
-## Development server
+* highly customizable
+* very easy to implement
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Demo
 
-## Code scaffolding
+[![](https://raw.githubusercontent.com/yasref/ngx-i24-progress-bar-lib/master/projects/demo/images/dark.png)](https://stackblitz.com/edit/ngx-i24-progress-bar-demo)
+* [Link](https://stackblitz.com/edit/ngx-i24-progress-bar-demo)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Get started
+#### Installation
+```
+$ npm i ngx-i24-progress-bar@latest
+```
+#### Example
+##### TS
+###### Module
+```typescript 
+import { NgxI24ProgressBarModule } from 'ngx-i24-progress-bar';
+@NgModule({
+  declarations: [ AppComponent ],
+  imports: [BrowserModule, NgxI24ProgressBarModule  ],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+```
+ ###### Component
+ ```typescript 
+import { Component } from '@angular/core';
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss']
+})
+export class AppComponent {
+   percentage = 89;
+   text = 'HTML';
+}
+```
+##### HTML
+```html 
+<ngx-i24-progress-bar [percentage]="percentage" [text]="text" ></ngx-i24-progress-bar>
+``` 
 
-## Build
+## Options
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+| Property (Type) | Default | Description|
+| - | - | - |
+| **percentage** | 0 | The percent value   `0 - 100` |
+| **text** | HTML | The text value |
+| **textColor** | '#222' | The text color |
+| **percentageRadius** | '3px' | The border radius |
+| **percentageHeight** | '8px' | The height of percentage |
+| **percentageColor** | '#222' | The color of percentage text |
+| **progressBackColor** | '#eee' | The border radius |
+| **progressColor** | '#e91e63' | The border radius |
+| **spaceBetween** | '10px' | The space between the text and the progress |
 
-## Running unit tests
+## Other Projects
+| Name | Link | Description|
+| - | - | - |
+| ngx-i24-circular-progress | [Link](https://www.npmjs.com/package/ngx-i24-circular-progress) | Lightweight plugin to render simple, animated and 
+| ngx-weekday-picker        | [Link](https://www.npmjs.com/package/ngx-weekday-picker)        | Lightweight plugin to a pick weekday.                                         |
+| ngx-i24-color-picker      | [Link](https://www.npmjs.com/package/ngx-i24-color-picker)      | A lightweight plugin to pick a color.                                         |
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Support
 
-## Running end-to-end tests
+[![](https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png)](https://www.buymeacoffee.com/yaseenref)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Copyright
+Copyright (c) 2022 Yaseen Alrefaee, contributors. Released under the MIT
+ 
